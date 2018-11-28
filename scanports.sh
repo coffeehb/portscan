@@ -4,17 +4,11 @@ source /etc/profile;
 # https://www.jianshu.com/p/2d60e6513fdd
 # -----------------------------
 #
-#➜  portscan> sh bash_scanports.sh 23.232.72.205 1 10000
-#Connection to 23.236.75.205 port 22 [tcp/ssh] succeeded!
-#Connection to 23.236.75.205 port 80 [tcp/http] succeeded!
-#Connection to 23.236.75.205 port 8443 [tcp/pcsync-https] succeeded!
-#done!!!!!!!!!!
-
 tempfifo=$$.fifo
 target_ip=$1
 start_port=$2
 end_port=$3
-number_tasks=50
+number_tasks=100
 
 if [ $# -eq 3 ] 
 then
